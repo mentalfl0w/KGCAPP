@@ -53,6 +53,11 @@ jobs:
       - name: ubuntu install libfuse2
         run: sudo apt install libfuse2
         
+      - name: delete unnecessary SQL driver
+        run: |
+          rm $Qt6_DIR/plugins/sqldrivers/libqsqlmimer.so
+          rm $Qt6_DIR/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPlugin*.cmake
+        
       - name: build ubuntu
         run: |
           ninja --version
