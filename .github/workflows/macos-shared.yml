@@ -7,13 +7,15 @@ on:
       - 'source/**'
       - 'scripts/**'
       - '.github/workflows/macos-shared.yml'
+      - '3rdparty/**'
   pull_request:
     paths:
       - '*.txt'
       - 'include/**'
       - 'source/**'
       - 'scripts/**'
-      - '.github/workflows/macos-shared.yml' 
+      - '.github/workflows/macos-shared.yml'
+      - '3rdparty/**'
       
 jobs:
   build:

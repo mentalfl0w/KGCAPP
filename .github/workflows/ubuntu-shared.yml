@@ -8,6 +8,7 @@ on:
       - 'source/**'
       - 'scripts/**'
       - '.github/workflows/ubuntu-shared.yml'
+      - '3rdparty/**'
   pull_request:
     paths:
       - '*.txt'
@@ -15,6 +16,7 @@ on:
       - 'source/**'
       - 'scripts/**'
       - '.github/workflows/ubuntu-shared.yml'
+      - '3rdparty/**'
       
 jobs:
   build:
